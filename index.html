@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify to MIDI Downloader</title>
+</head>
+<body>
+
+<h1>Spotify to MIDI Downloader</h1>
+
+<form id="searchForm">
+    <label for="searchQuery">Search for a track on Spotify:</label><br>
+    <input type="text" id="searchQuery" name="searchQuery">
+    <button type="submit">Search</button>
+</form>
+
+<div id="downloadLinks">
+    <!-- Download links will be displayed here -->
+</div>
+
+<script>
+    document.getElementById("searchForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        let searchQuery = document.getElementById("searchQuery").value;
+        // Perform search and fetch MIDI file, then update the downloadLinks div
+    });
+</script>
+
+</body>
+</html>
